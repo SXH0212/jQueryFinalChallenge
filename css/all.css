@@ -1,0 +1,292 @@
+/* basis設定 */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  /* outline: 1px solid #000; */
+  /* 方便可視化區域用 */
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+body {
+  font-family: Microsoft JhengHei , sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+/* header 設定*/
+
+header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    position: sticky;
+    /* border-bottom: 1px solid #f1f1f1; */
+    /* 覺得會menu的下底線變得不好看，若要加上的話建議優化 */
+}
+
+/* 這一段覺得圖片與a標籤水平沒有對齊，暫時沒找到解決方式 */
+.social-media {
+    background-color: #F6F6F8;
+}
+
+.social-inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4px 0px;
+}
+
+.social-media a {
+    display: inline-block;
+}
+
+.social-media img {
+    margin: 4px 5px;
+}
+
+.fb {
+    color: #4267B2;
+}
+
+.twitter{
+    color: #1DA1F2;
+    position: relative;
+    margin-left: 12px;
+    padding-left: 8px;
+}
+
+.twitter::before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: #CCCCCC;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+}
+
+/* nav 設定 */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    background-image: url(/img/hexschool-logo.png);
+    width: 150px;
+    height: 36px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-bottom: 4px;
+}
+
+.menu {
+    display: flex;
+    gap: 42px;
+    margin-right: 12px;
+}
+
+.menu li a {
+    display: flex;
+    align-self: stretch;
+    color: #00251A;
+    padding: 26px 2px 22px 2px;
+    border-bottom: 4px solid #fff;
+}
+
+.menu .active {
+    border-bottom: 4px solid #00CC99;
+}
+
+.menu li a:hover {
+    border-bottom: 4px solid #00CC99;
+}
+
+/* main 設定 */
+
+.banner {
+    background-image: url(/img/header_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 125px 0;
+    position: relative;
+}
+
+.banner-back {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.banner-back h2 {
+    padding: 27px 0px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+}
+
+/* 介紹說明頁面 */
+.card {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.card-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card-inner li {
+    width: 33%;
+    box-shadow: 0px 2px 4px 0px #00000029;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-inner h4 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.card-inner .card-img {
+    display: flex;
+    align-items: center;
+    height: 157px;
+}
+
+.align-left {
+    align-self: start;
+}
+
+/* table設定 */
+
+.table-inner {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+.table-inner th, .table-inner td {
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 6px 0px 6px 17px;
+    text-align: left;
+}
+
+.point {
+    font-weight: 700;
+    color: #00CC99;
+}
+
+/* form 設定 */
+.form {
+    background-image: linear-gradient(#E4FFF8, #A2DDCE);
+    padding: 36px 0px;
+}
+
+.form h3 {
+    color: #00251A;
+    margin-bottom: 28px;
+}
+
+.form-inner {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form-inner input,textarea {
+    border: 1px solid #AAAAAA;
+    border-radius: 3px;
+    color: #999999;
+    display: block;
+    margin-top: 8px;
+}
+
+.form-inner input {
+    width: 318px;
+    height: 38px;
+    padding: 6px 0 6px 10px;
+}
+
+.form-inner textarea {
+    width: 350px;
+    height: 200px;
+    resize: none;
+}
+
+.form-info label {
+    line-height: 19.2px;
+}
+
+.form-info label:not(:first-child) {
+    display: block;
+    margin-top: 16px;
+}
+
+.btn {
+    border-radius: 3px;
+    background-color: #00251A;
+    border: 1px solid #00251A;
+    color: #FFFFFF;
+    line-height: 19.2px;
+    padding: 10px 63px;
+    cursor: pointer;
+    margin: 32px auto;
+    display: block;
+}
+
+.btn:hover {
+    border: 1px solid  #00CC99;
+    background-color:  #00CC99;
+}
+
+/* footer 設定 */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    margin: 16px 0px;
+}
+
+.footer-info a {
+    color: #00CC99;
+}
