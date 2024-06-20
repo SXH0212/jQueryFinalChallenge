@@ -97,7 +97,7 @@ nav {
 }
 
 .logo a {
-    background-image: url(img/hexschool-logo.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/homework-b5f67.appspot.com/o/hexschool-logo.png?alt=media&token=f70ed542-c2c2-4b2b-af5c-13ccacd26113);
     width: 150px;
     height: 36px;
     display: block;
@@ -132,7 +132,7 @@ nav {
 /* main 設定 */
 
 .banner {
-    background-image: url(img/header_background.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/homework-b5f67.appspot.com/o/header_background.png?alt=media&token=d0d4e2e4-25bc-409d-b60a-4c52e0cd2ef9);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
