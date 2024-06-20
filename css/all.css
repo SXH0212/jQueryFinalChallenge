@@ -97,7 +97,7 @@ nav {
 }
 
 .logo a {
-    background-image: url(/img/hexschool-logo.png);
+    background-image: url(img/hexschool-logo.png);
     width: 150px;
     height: 36px;
     display: block;
@@ -132,7 +132,7 @@ nav {
 /* main 設定 */
 
 .banner {
-    background-image: url(/img/header_background.png);
+    background-image: url(img/header_background.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
