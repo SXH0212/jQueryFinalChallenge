@@ -191,6 +191,15 @@ nav {
     align-self: start;
 }
 
+.card-ul li {
+    list-style: disc;
+    width: 100%;
+    box-shadow: none;
+    display: list-item;
+    padding: 0px;
+    margin-left: 20px;
+}
+
 /* table設定 */
 
 .table-inner {
@@ -239,8 +248,8 @@ nav {
 
 .form-inner input {
     width: 318px;
-    height: 38px;
-    padding: 6px 0 6px 10px;
+    /* height: 38px; */
+    padding: 10px;
 }
 
 .form-inner textarea {
